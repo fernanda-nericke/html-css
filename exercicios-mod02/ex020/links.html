@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+            #  = id
+            .  = classe
+            :  = pseudo-classe
+            :: = pseudo-elemento
+            >  = filho
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a { /* cor do link */
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{ /* cor do link após ter clicado já */
+            color: purple;
+        }
+
+        a:hover{ /* cor do link quando passa o mouse em cima */
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active{ /* cor o link quando clica pra ir no site */
+            color: blue;
+        }
+
+        a::after { /* escrever ago depois do link */
+            content: ' ❀';
+            text-decoration: none;
+        }
+
+        a::before {
+            content: '❀ ';
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+   <ul>
+    <li><a href="https://github.com/Nanda-nericke/php" target="_blank">Repositório GitHub</a></li>
+    <li><a href="https://www.instagram.com/nanda_nericke/" target="_blank">Instagram</a></li>
+    <li><a href="https://twitter.com/Nanda_nericke" target="_blank">Twitter</a></li>
+   </ul>
+</body>
+</html>
