@@ -15,6 +15,16 @@
             width: 300px;
         }
 
+        .exercicio {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        .exercicio2 {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
         td {
             border: 1px solid black;
             padding: 10px;
@@ -27,10 +37,61 @@
     <table>
         <tr>
             <td>A</td>
-            <td>B</td>
-            <!-- PAREI AQUI, DEPOIS DE TIRAR O C-->
+            <td colspan="2">B</td>
+            
         </tr>
         <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+    <br>
+    <table class="exercicio">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+    <br>
+    <table class="exercicio2">
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
             <td>D</td>
             <td>E</td>
             <td>F</td>
@@ -44,6 +105,9 @@
             <td>J</td>
             <td>K</td>
             <td>L</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
         </tr>
     </table>
 </body>
